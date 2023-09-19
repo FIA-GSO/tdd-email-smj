@@ -11,7 +11,7 @@ def is_valid_email(email: str) -> bool:
     """
 
     username_pattern = r'^[\w\.-]'
-    domain_patttern  =  r'[\w\.-]'
+    domain_pattern =  r'[\w\.-]'
     country_patttern  = r'w+$'
 
     pattern = fr'{username_pattern}+@{domain_pattern}+\.\{country_patttern}'
