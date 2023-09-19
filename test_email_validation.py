@@ -48,9 +48,9 @@ def test_is_valid_email__gueltige_Adressen(email):
 
 
 @pytest.mark.parametrize("email", [
-    ("plainaddress")
-    ("#@%^%#$@#$@#.com")
-    ("@example.com")
+    ("plainaddress") #TODO: @ fehlt
+    ("#@%^%#$@#$@#.com") #TODO: Unerlaubte Sonderzeichen
+    ("@example.com") #TODO: Name vor dem @ ist leer
     ("Joe Smith <email@example.com>")
     ("email.example.com")
     ("email@example@example.com")
