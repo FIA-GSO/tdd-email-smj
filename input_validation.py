@@ -10,7 +10,11 @@ def is_valid_email(email: str) -> bool:
     False -- email is not valid
     """
 
-    pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    username_pattern = r'^[\w\.-]'
+    domain_patttern  =  r'[\w\.-]'
+    country_patttern  = r'w+$'
+
+    pattern = fr'{username_pattern}+@{domain_pattern}+\.\{country_patttern}'
 
     if re.match(pattern, email):
         return True
